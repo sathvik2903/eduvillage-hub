@@ -63,7 +63,7 @@ export function StudentSidebar({ onLogout }: StudentSidebarProps) {
                         `flex items-center space-x-3 rounded-lg px-3 py-2 transition-all duration-200 ${
                           isActive
                             ? "bg-primary text-primary-foreground shadow-md"
-                            : "text-muted-foreground hover:bg-accent hover:text-accent-foreground"
+                            : "text-foreground font-bold hover:bg-accent hover:text-accent-foreground"
                         }`
                       }
                     >
