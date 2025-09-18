@@ -34,7 +34,7 @@ export function StudentSidebar({ onLogout }: StudentSidebarProps) {
 
   return (
     <Sidebar className={collapsed ? "w-14" : "w-64"} collapsible="icon">
-      <SidebarContent className="bg-gradient-to-b from-primary/5 to-primary/10">
+      <SidebarContent className="bg-gradient-to-b from-violet-50 to-violet-100">
         {/* Logo Section */}
         <div className="p-4 border-b border-border/50">
           <div className="flex items-center space-x-3">
