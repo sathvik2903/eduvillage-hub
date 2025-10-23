@@ -14,6 +14,7 @@ import { StudentLeaderboard } from "./pages/student/StudentLeaderboard";
 import { StudentAssignments } from "./pages/student/StudentAssignments";
 import { StudentTests } from "./pages/student/StudentTests";
 import { TeacherDashboard } from "./pages/teacher/TeacherDashboard";
+import ChatbotPage from "./pages/ChatbotPage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -95,6 +96,9 @@ const App = () => {
                   <Route path="profile" element={<div className="p-8 text-center text-muted-foreground">Profile feature coming soon!</div>} />
                 </Route>
               )}
+              
+              {/* Chatbot route accessible from anywhere */}
+              <Route path="/chatbot" element={<ChatbotPage />} />
               
               {/* Redirect based on user role */}
               <Route 
